@@ -1,252 +1,256 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
-
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-  font-size: 14px;
-  font-weight: normal;
-  padding-top: 5px;
-  padding-left: 60px;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-left: 60px;
 }
 
 h1 span {
-  font-weight: 800;
-  color: #24baa0;
+    font-weight: 800;
+    color: #24baa0;
 }
 
 h2 {
-  text-transform: uppercase;
-  font-size: 40px;
-  padding-right: 100px;
-  padding-top: 65px;
-  font-weight: 400;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-right: 100px;
+    padding-top: 65px;
+    font-weight: 400;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 p {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 25px;
-  margin-top: 20px;
-  width: 90%;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    width: 90%;
 }
 
 .column {
-  float: left;
+    float: left;
 }
 
 .clearFix:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  border: 1px solid blue;
-  position:relative;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 #slider article.container {
-  padding: 75px;
-  background-color: #FFFFFF;
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 69%, rgba(158,158,158,1) 91%, rgba(158,158,158,1) 100%);
+    padding: 75px;
+    background-color: #FFFFFF;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 1) 69%, rgba(158, 158, 158, 1) 91%, rgba(158, 158, 158, 1) 100%);
 }
 
 .button {
-  width: 250px;
-  color: white;
-  margin: 0 auto;
-  text-transform: uppercase;
-  padding: 15px;
-  background-color: #24baa0;
-  border-radius: 10px;
-  display: block;
-  font-size: 24px;
+    width: 250px;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #24baa0;
+    border-radius: 10px;
+    display: block;
+    font-size: 24px;
 }
 
 .arrow {
-  font-size: 72px;
-  font-weight: normal;
-  color: #24BAA0;
-  position: absolute;
-  top: 200px;
+    font-size: 72px;
+    font-weight: normal;
+    color: #24BAA0;
+    position: absolute;
+    top: 200px;
 }
 
 .arrow.left {
-  left: 90px;
+    left: 90px;
 }
 
 .arrow.right {
-  right: 90px;
+    right: 90px;
 }
 
+
 /*   Część nagłówkowa strony   */
+
 header {
-  color: white;
-  background-color: black;
-  width: 1200px;
-  margin: 0 auto;
+    color: white;
+    background-color: black;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 header a {
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 34px;
 }
 
 header nav.column {
-  /* dajemy nav.column bo column definiuje nam
+    /* dajemy nav.column bo column definiuje nam
   float left wcześniej globalnie i jest mocniejsze */
-  float: right;
-  padding-right: 60px;
+    float: right;
+    padding-right: 60px;
 }
 
 header li {
-  display: inline-block;
-  padding-top: 5px;
-  margin-left: 40px;
-  font-weight: 600;
-  font-size: 14px;
+    display: inline-block;
+    padding-top: 5px;
+    margin-left: 40px;
+    font-weight: 600;
+    font-size: 14px;
 }
+
 
 /*  Pod-MENU  */
 
 header li ul:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  right: 48px;
-  display: block;
-  transform: rotate(45deg);
-  height: 20px;
-  width: 20px;
-  background-color: black;
-  z-index: -1;
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 48px;
+    display: block;
+    transform: rotate(45deg);
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    z-index: -1;
 }
 
 header li ul {
-  display: none;  /* ukrywamy żeby zrobić hover */
-  position: absolute;
-  padding-top: 15px;
-  top: 35px;
-  right: 240px;
-  z-index: 2;
-  width: 110px;
+    display: none;
+    /* ukrywamy żeby zrobić hover */
+    position: absolute;
+    padding-top: 15px;
+    top: 35px;
+    right: 240px;
+    z-index: 2;
+    width: 110px;
 }
 
-header li:hover ul{
-  display: block;
-  position: absolute;
+header li:hover ul {
+    display: block;
+    position: absolute;
 }
 
 header li ul li:first-of-type {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
 header li ul li {
-  background-color: black;
-  display: block;
-  margin: 0;
-  font-weight: 600;
-  line-height: 1em;
-  padding: 2px 0px 10px 12px;
+    background-color: black;
+    display: block;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1em;
+    padding: 2px 0px 10px 12px;
 }
+
 
 /*  Prezentacja produktów w sliderze  */
-#slider img{
-  float: left;
-  height: 55%;
-  width: 55%;
-  margin-right: -35px;
+
+#slider img {
+    float: left;
+    height: 55%;
+    width: 55%;
+    margin-right: -35px;
 }
 
-#slider h2, #slider p, #slider a{
-  text-align: center;
+#slider h2, #slider p, #slider a {
+    text-align: center;
 }
 
 #slider .button-wrapper {
-  float: left;
-  display: block;
-  width: 425px;
+    float: left;
+    display: block;
+    width: 425px;
 }
 
-#slider h2 span{
-  font-weight: 700;
-  color: #24baa0;
+#slider h2 span {
+    font-weight: 700;
+    color: #24baa0;
 }
 
 #slider a {
-  display: block;
+    display: block;
 }
 
 
 /*  Oferta  */
 
 #offer .column {
-  width: 330px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 100px;
-  float: left;
+    width: 330px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 100px;
+    float: left;
 }
 
-#offer .column:nth-child(1){
-  background-image: url(../images/box1_img.jpg);
-  margin: 30px 0 30px 70px;
+#offer .column:nth-child(1) {
+    background-image: url(../images/box1_img.jpg);
+    margin: 30px 0 30px 70px;
 }
 
-#offer .column:nth-child(2){
-  background-image: url(../images/box2_img.jpg);
-  margin: 30px 35px;
+#offer .column:nth-child(2) {
+    background-image: url(../images/box2_img.jpg);
+    margin: 30px 35px;
 }
 
-#offer .column:nth-child(3){
-  margin: 30px 0;
-  border: 1px solid silver;
-  padding: 25px 0 10px 25px;
-  color: #888888;
+#offer .column:nth-child(3) {
+    margin: 30px 0;
+    border: 1px solid silver;
+    padding: 25px 0 10px 25px;
+    color: #888888;
 }
 
 #offer .column h3 {
-  font-size: 16px;
-  color: black;
+    font-size: 16px;
+    color: black;
 }
 
 .underline {
-  display: block;
-  height: 7px;
-  width: 140px;
-  background-color: #24baa0;
-  z-index: 2;
+    display: block;
+    height: 7px;
+    width: 140px;
+    background-color: #24baa0;
+    z-index: 2;
 }
 
 #offer .column .text-bg {
-  background-color: rgba(255, 255, 255, 0.4);
-  z-index: 0;
-  margin-top: 165px;
-  padding: 10px 0 0 25px;
-  height: 50px;
-  position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 0;
+    margin-top: 165px;
+    padding: 10px 0 0 25px;
+    height: 50px;
+    position: relative;
 }
 
 
 /*  CENNIK */
 
-#pricelist {
+#pricelist .container {
     background-color: #f1f1f1;
 }
 
@@ -255,24 +259,27 @@ header li ul li {
     height: 500px;
     border: 2px solid #cccccc;
     background-color: #f9f9f9;
-    margin: 30px 0 50px 0;
     width: 330px;
+    text-align: center;
 }
 
 #pricelist .column:nth-of-type(1) {
-    margin: 30px 0 30px 70px
+    margin: 50px 0 30px 70px
 }
 
 #pricelist .column:nth-of-type(2) {
-    margin: 30px 35px;
+    margin: 50px 35px;
+    background-color: rgba(36, 186, 160, 1);
+    border-color: rgba(36, 186, 160, 1);
 }
+
+#pricelist .column:nth-of-type(2) div {
+    border-color: white;
+}
+
 
 #pricelist .column:nth-of-type(3) {
-    margin: 30px 0;
-}
-
-#pricelist .column:nth-of-type(2) div p {
-    color: rgba(36, 186, 160, 1);
+    margin: 50px 0;
 }
 
 #pricelist .column div {
@@ -280,12 +287,28 @@ header li ul li {
     height: 120px;
     border-radius: 50%;
     border: 2px solid #cccccc;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+}
+
+
+#pricelist article.container div.column h4 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 40px;
 }
 
 #pricelist .column div p {
-    font-size: 48px;
+    font-size: 44px;
+    font-weight: 600;
     color: #cccccc;
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#pricelist .column:nth-of-type(2) div p {
+    color: rgba(36, 186, 160, 1);
 }
 
 #pricelist .column div p span {
@@ -351,18 +374,21 @@ header li ul li {
 #pricelist .column div:after {
     width: 25px;
     height: 25px;
-    background: #cccccc;
+    background: yellow; /*#cccccc*/
     top: -15px;
     left: 46%;
     z-index: 2;
 }
 
+
 /* Sekcja Kontakt */
-h3  {
-  font-weight: 200;
-  text-transform: uppercase;
-  margin-top: 10px;
+
+h3 {
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
+
 
 
 #contact fieldset:nth-of-type(1) {
@@ -370,8 +396,8 @@ h3  {
     float: left;
 }
 
-#contact fieldset:nth-of-type(1) input:nth-of-type(1), input:nth-of-type(2){
-  margin-bottom: 20px;
+#contact fieldset:nth-of-type(1) input:nth-of-type(1), input:nth-of-type(2) {
+    margin-bottom: 20px;
 }
 
 #contact input, #contact textarea, #contact label {
@@ -395,7 +421,6 @@ h3  {
     height: 50px;
     font-size: 18px;
     font-weight: 600;
-
 }
 
 #contact article fieldset input {
@@ -411,15 +436,15 @@ h3  {
 }
 
 #contact fieldset:nth-of-type(2) input:nth-of-type(1) {
-width: 120px;
-height: 40px;
-
+    width: 120px;
+    height: 40px;
 }
-#contact fieldset:nth-of-type(2) label{
-  font-size: 14px;
-  color: #808080;
 
+#contact fieldset:nth-of-type(2) label {
+    font-size: 14px;
+    color: #808080;
 }
+
 
 /*  Sekcja Stopka  */
 
