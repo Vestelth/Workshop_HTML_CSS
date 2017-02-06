@@ -501,7 +501,7 @@ margin-left: 30px;
 img.redchair {
   margin-bottom: 15px;
   position: relative;
-  right: 60px;
+  right: 60px; top: -10px;
 }
 
 #Checkbox {
@@ -511,7 +511,7 @@ img.redchair {
 
 #submit {
   position: relative;
-  left: -40px;
+  left: -40px; bottom: 2px;
 }
 
 div.agree {
