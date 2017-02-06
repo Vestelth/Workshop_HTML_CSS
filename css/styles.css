@@ -256,10 +256,19 @@ header li ul li {
     border: 2px solid #cccccc;
     background-color: #f9f9f9;
     margin: 30px 0 50px 0;
+    width: 330px;
+}
+
+#pricelist .column:nth-of-type(1) {
+    margin: 30px 0 30px 70px
 }
 
 #pricelist .column:nth-of-type(2) {
-    margin-top: 30px;
+    margin: 30px 35px;
+}
+
+#pricelist .column:nth-of-type(3) {
+    margin: 30px 0;
 }
 
 #pricelist .column:nth-of-type(2) div p {
@@ -285,6 +294,7 @@ header li ul li {
 
 #pricelist ul {
     margin-top: 40px;
+    list-style: none;
 }
 
 #pricelist ul li {
@@ -319,12 +329,12 @@ header li ul li {
     margin-left: 70px;
 }
 
-#pricelist .column div::before, #pricelist .column div::after {
+#pricelist .column div:before, #pricelist .column div:after {
     border-radius: 50%;
     z-index: 1;
 }
 
-#pricelist .column div::before {
+#pricelist .column div:before {
     width: 50px;
     height: 50px;
     border: 2px solid #cccccc;
@@ -333,12 +343,12 @@ header li ul li {
     left: 41%;
 }
 
-#pricelist .column:nth-of-type(2) div::after {
+#pricelist .column:nth-of-type(2) div:after {
     background-color: #e6e6e6;
     left: 45%;
 }
 
-#pricelist .column div::after {
+#pricelist .column div:after {
     width: 25px;
     height: 25px;
     background: #cccccc;
@@ -358,8 +368,8 @@ h3  {
 #contact fieldset:nth-of-type(1) {
     width: 600px;
     float: left;
-
 }
+
 #contact fieldset:nth-of-type(1) input:nth-of-type(1), input:nth-of-type(2){
   margin-bottom: 20px;
 }
@@ -392,13 +402,14 @@ h3  {
     height: 50px;
     border: 1px solid #24baa0;
     font-size: 18px;
-      margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #contact article fieldset textarea {
     font-size: 20px;
     resize: none;
 }
+
 #contact fieldset:nth-of-type(2) input:nth-of-type(1) {
 width: 120px;
 height: 40px;
@@ -407,7 +418,6 @@ height: 40px;
 #contact fieldset:nth-of-type(2) label{
   font-size: 14px;
   color: #808080;
-
 
 }
 
