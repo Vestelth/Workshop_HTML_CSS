@@ -117,19 +117,22 @@
         <section id="contact">
             <article class="container clearFix">
                 <h3>Kontakt</h3>
+                <span class="underline"></span>
                 <br/>
                 <div>
                     <form class="clearFix">
                         <fieldset>
-                            <input type="text" name="name" placeholder="Imię">
-                            <input type="email" name="email" placeholder="e-mail">
-                            <textarea rows ="7" name="message" placeholder="Wiadomość"></textarea>
+                            <input type="text" name="name" placeholder="   Imię">
+                            <input type="email" name="email" placeholder="   e-mail">
+                            <textarea rows ="7" name="message" placeholder=" Wiadomość"></textarea>
                         </fieldset>
                         <fieldset class = "clearFix">
-                            <img src="images/red_chair.png" alt="czerwony fotel">
-                            <label for="Checkbox">Zgadzam się na przetwarzanie danych osobowych.</label>
+                            <img src="images/red_chair.png" alt="czerwony fotel" class="redchair">
+                            <label for="Checkbox" id="zgoda">
                             <input type="checkbox" name="agreement" id="Checkbox">
-                            <input type="submit" name="submit" value = "Wyślij">
+                            <div class="agree">Zgadzam się na przetwarzanie danych osobowych.</div>
+                            <input id="submit" type="submit" name="submit" value = "Wyślij">
+                            </label>
                         </fieldset>
                     </form>
                 </div>
